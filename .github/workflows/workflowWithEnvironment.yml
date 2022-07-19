@@ -1,0 +1,14 @@
+# workflowWithEnvionment.yml
+name: workflowWithEnvironment.yml
+
+on:
+  push:
+    branches:
+      [none]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: demoDevEnvironment
+    steps:
+      - name: deploy
